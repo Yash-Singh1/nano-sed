@@ -1,0 +1,12 @@
+syntax sed "\.sed$"
+header "^#!.*bin/(env +)?sed( *|$)"
+comment "#"
+
+color brightmagenta ".*"
+color yellow "/[A-Za-z]*[[:space:]]*(}|;|$)"
+color yellow "(^|;|\{)[[:space:]]*[A-Za-z]/"
+color blue "[:$][[:space:]]*[A-Za-z]*"
+color green "/"
+color black ";"
+color black "[{}]"
+color brightblue "(^|[[:space:]]+)#.*"
